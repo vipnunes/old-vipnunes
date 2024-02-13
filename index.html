@@ -65,16 +65,28 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<script src="https://www.drcode.com.br/nofollow/aviso-cookies/drcode.cookies.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script>
-  avisoCookiesDrcode({
-    message:'We use cookies to give you the best experience on our website.',
-    backgroundColor:'rgba(255,255,255,0.95)',
-    textColor:'#666666',
-    buttonBackgoundColor:'#0e9a20',
-    buttonHoverBackgoundColor:'#0a6b16',
-    buttonTextColor:'#ffffff'
-})
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#dad9d9"
+    },
+    "button": {
+      "background": "#000000"
+    }
+  },
+  "theme": "classic",
+  "position": "bottom-right",
+  "content": {
+    "message": "We use cookies to improve our users' experience",
+    "dismiss": "Accept all cookies",
+    "link":"Find out more",
+
+  }
+});
 </script>
 
 <div class="container">
